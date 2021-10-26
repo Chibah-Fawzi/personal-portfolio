@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_techstack_teches",
+  "info": {
+    "name": "tech",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tech": {
+      "type": "string"
+    }
+  }
+}

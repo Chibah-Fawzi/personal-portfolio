@@ -1,0 +1,118 @@
+.container{
+    height: 100%;
+    
+    .header{
+     display: flex;   
+     flex-direction: column-reverse;
+     justify-content: space-between;
+     h1{
+        font-family: var(--main-font);
+        text-align: center;
+        color: var(--titles);
+        font-size: 35px;
+        max-width: 800px;
+        margin-bottom: 50px;
+     }
+    }
+    .close{
+        text-transform: uppercase;
+        font-family: var(--second-font);
+        color: var(--bg)!important;
+        font-weight: bolder;
+        font-size: 35px;
+        text-align: right;
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    .carouselSlider{
+        margin: auto;
+        max-width:700px;
+
+    }
+    .type{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border: 1px solid var(--titles);
+        padding: 5px;
+        margin: 0 10px 15px 0;
+        color: var(--titles);
+    }
+    .description{
+        text-transform: none;
+        font-family: var(--second-font);
+        border-top: 1px solid var(--titles);
+        border-bottom: 1px solid var(--titles);
+        margin-top: 10vh;
+        padding: 10px;
+        font-size: 20px;
+        h3{
+          font-family: var(--main-font);   
+          color: var(--titles);
+          font-size: 28px;
+          text-decoration: underline 3px solid var(--titles);
+          text-underline-offset: 10px;
+          margin-bottom: 5vh;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .techStack,.date{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 10px;
+        .item, .itemDate{
+            background: var(--titles);
+            color: var(--bg);
+            margin: 5px;
+            padding: 5px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+    }
+}
+
+// @media only screen and (max-width: 1084px) {
+//     .layout{
+//         .wrap{ 
+//             align-self: center;
+//             .techStack,.date{
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+            
+//             .item{
+//                 margin: 0;
+//                 padding: 0;
+
+//             }
+//         }
+//     }
+// }
+// }
+@media only screen and (max-width: 550px) {
+
+.layout {
+        .type{
+        font-size: 10px!important;
+    }
+    .description{
+  
+        h3{
+          text-decoration: none;
+        }
+    }
+}
+}

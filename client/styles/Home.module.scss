@@ -1,0 +1,86 @@
+.layout{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  h1{
+    // color: var(--titles);
+    font-size: 40px;
+    color: var(--bg2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  a {
+    cursor: pointer;
+  }
+    .brand h1 {
+      font-family: var(--main-font);
+  }
+    .menu h1{
+      font-family: var(--second-font);
+  }
+}
+
+.header{
+  margin-top: 7%;
+  align-self: center;
+  h1{
+    color: #fff;
+    font-family: var(--third-font);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4Px;
+    text-align: center;
+    max-width: 75vw;
+    margin-bottom: 20%;
+  }
+  span {
+    font-style: italic;
+    color: var(--bg2);
+  }
+  q {
+    margin-top: 10vh;
+    font-style: italic;
+    color: #fff;
+  }
+}
+
+.transition {
+  background: var(--bg2);
+  height: 300px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.layout{
+  height: 100%;
+  h1 {
+    font-size: 54px;
+  }  
+}
+
+}
+
+@media only screen and (max-width: 465px) {
+.layout{
+  margin: 30px;
+  h1 {
+    font-size: 49px;
+  }  
+}
+}
+
+@media only screen and (max-width: 400px) {
+.layout{
+  h1 {
+    font-size: 30px;
+  }  
+}
+}

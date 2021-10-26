@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "works",
+  "info": {
+    "name": "work",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "preview": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "tech": {
+      "type": "component",
+      "repeatable": true,
+      "component": "techstack.tech"
+    },
+    "def": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+:root {
+  --bg: #4C3B4E;
+  --bg2:#F7DF57;
+  --dark-bg: #362438;
+  --dark-bg2:#cebb51;
+  --titles: #e4a565;
+  --main-font: "bely-display";
+  --second-font: "minerva-modern",sans-serif;
+  --third-font: "azo-sans-web", sans-serif;
+}
+
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+  /* width */
+  body::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0.5;
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: white;
+    opacity: 0.6;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+        background: var(--bg2);
+        border-radius: 20px;
+  }
+      /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+      background: var(--dark-bg2);
+  }
+
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}

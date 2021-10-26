@@ -1,0 +1,62 @@
+.container{
+    background: var(--bg2);
+    height: 100vh;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 10vh 100px 0vh 100px;
+    padding-top: 10vh;
+    h1 {
+        font-family: var(--main-font);
+        color: var(--titles);
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-bottom: 10vh;
+    }
+    p {
+        font-size: 25px;
+        font-family: var(--second-font);
+        color: var(--bg);
+        max-width: 700px;
+        text-align: justify;
+    }
+    .image{
+        padding: 10px;
+        margin: 10vh 0 10vh 10vh;
+        max-width: 450px;
+        max-height: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 1084px) {
+    .container{
+         height: 100%;
+    }
+    .layout {
+           
+        flex-direction: column;
+        p{
+            max-width: 800px;
+            font-size: 30px;
+        }
+        .image {
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .layout{
+        p{
+            text-align: left;
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+.layout {
+    margin: 30px;
+}
+}

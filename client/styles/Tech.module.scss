@@ -1,0 +1,47 @@
+.container{
+    height: 100%;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10vh 100px 0vh 100px;
+    padding-top: 10vh;
+    text-transform: uppercase;
+    .header h1 {
+        font-family: var(--main-font);
+        color: var(--titles);
+        font-size: 20px;
+        padding-bottom: 10vh;
+    }
+    .items {
+    h1{
+        font-family: var(--main-font);
+        color: var(--bg2);
+        margin-bottom: 10vh;
+        font-size: 40px;
+    }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .layout{
+        .items h1{
+            font-size:30px;
+            margin-bottom: 10vh;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    
+    .container{
+        margin-bottom: 10vh;
+     
+    }
+    
+    .layout {
+            margin: 30px;
+        }
+
+}
